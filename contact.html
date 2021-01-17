@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>GYIÖK Hajdúnánás</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:18px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Bezárás</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>GYIÖK<br>Hajdúnánás</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kezdőoldal</a> 
+    <a href="news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Híreink</a> 
+    <a href="members.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tagjaink</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kapcsolat</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>GYIÖK Hajdúnánás</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- Services -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Kapcsolat</b></h1>
+        <p>Ha kérdésed lenne vagy érdeklődnél a munkásságunkkal kapcsolatban vedd fel velünk a kapcsolatot és kövess minket az alábbi elérhetőségeken.</p>
+        <p>
+            <a href="mailto:gyiok.hnanas@gmail.com"><img src="assets/email.png" height="30" width="30" alt="E-mail"></a>
+            <a href="https://www.facebook.com/profile.php?id=100017621561411"><img src="assets/fbook.png" height="30" width="30" alt="Facebook"></a>
+            <a href="https://www.instagram.com/gyiok_hnanas/"><img src="assets/instamini.jpg" height="30" width="30" alt="Instagram"></a>
+        </p>
+  </div>
+
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>About us</b></h1>
+        <p>We're the Children and Junior Self-Government of Hajdúnánás. Follow us the social media platforms above!</p>
+  </div>
+
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Közlemény</b></h1>
+        <p>Az ifjúsági önkormányzatunk weboldala a Nemzeti Együttműködési Alap támogatása által jött létre.</p>
+        <a href="http://www.kormany.hu/hu/emberi-eroforrasok-miniszteriuma"><img src="assets/emmia.jpg" height="58" width="75" alt="EMMI"></img></a>
+		<a href="http://www.kormany.hu/hu/emberi-eroforrasok-miniszteriuma"><img src="assets/emmi.jpg" height="58" width="150" alt="EMMI"></img></a>
+  </div>
+
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Impresszum</b></h1>
+    <p>Page developed by <a href="https://github.com/marnandr">Nandor Maro</a>. For the development I used W3.CSS templates.</p>
+    <p>This site is part of <a href="http://www.hajdunanas.hu">hajdunanas.hu</a> for any other legal information please visit the home page.</p>
+    <p>&copy; Hajdúnánási Gyermek-és Ifjúsági Önkormányzat - 2017-2021</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Gyermek-és Ifjúsági Önkormányzat</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

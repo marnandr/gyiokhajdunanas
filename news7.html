@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>GYIÖK Hajdúnánás</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:18px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Bezárás</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>GYIÖK<br>Hajdúnánás</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kezdőoldal</a> 
+    <a href="news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Híreink</a> 
+    <a href="members.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tagjaink</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kapcsolat</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>GYIÖK Hajdúnánás</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Title -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Híreink.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Iframe mobile compability: class="w3-mobile"  -->
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Skate Park felújítási munkálatai.</b></h1>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D346624629268253%26id%3D100017621561411&width=500&show_text=true&height=803&appId" width="500" height="803" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- Iframe mobile compability: class="w3-mobile"  -->
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Kérdőívünk eredményei.</b></h1>
+    <iframe class="w3-mobile"  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D342302619700454%26id%3D100017621561411&width=500&show_text=true&height=778&appId" width="500" height="778" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- Iframe mobile compability: class="w3-mobile"  -->
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Nánás Angyala Jótékonysági Adománygyűjtés.</b></h1>
+    <p>
+        Átvevőhelyek:
+        <ul>
+            <li>Hajdúnánás Városi Önkormányzat</li>
+            <li>Bocskai Filmszínház</li>
+            <li>Kéky Lajos Városi Művelődési Központ</li>
+        </ul>
+    </p>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftelevizio.hajdunanasi%2Fposts%2F1839277816197807&width=500&show_text=true&height=390&appId" width="500" height="390" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- Iframe mobile compability: class="w3-mobile"  -->
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Választások eredményei.</b></h1>
+    <p>
+        <h3>Polgármester jelöltek</h3>
+        <ol>
+            <li>Lakatos Ádám - 517 szavazat</li>
+            <li>Péntek Máté Miklós - 314 szavazat</li>
+        </ol>
+        <h3>Képviselő-jelöltek</h3>
+        <ol>
+            <li>Daróczi Panna - 511 szavazat</li>
+            <li>Csiszár Veronika - 498 szavazat</li>
+            <li>Tar Patrik Zsolt - 399 szavazat</li>
+            <li>Varga Erika - 391 szavazat</li>
+            <li>Péntek Panka - 384 szavazat</li>
+            <li>Vadász Gréta Ivett - 365 szavazat</li>
+            <li>Kovács Andor - 328 szavazat</li>
+            <li>Hűse Csaba - 302 szavazat</li>
+            <li>Magi Róbert - 301 szavazat</li>
+            <li>Reszegi Ferenc - 293 szavazat</li>
+        </ol>
+        Gratulálunk a polgármester- és képviselő-jelölteknek! Köszönjük minden fiatalnak, aki szavazott!
+    </p>
+  </div>
+
+  <!-- Iframe mobile compability: class="w3-mobile"  -->
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Jelentkezz GYIÖK képviselőnek!</b></h1>
+      <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="assets/callforgyiok1.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="assets/callforgyiok2.jpg" style="width:100%">
+    </div>
+  </div>
+  </div>
+
+  <!-- Iframe mobile compability: class="w3-mobile"  -->
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>IV. Kékedi csapatépítő tréning.</b></h1>
+    <p>Az <a href="https://www.facebook.com/extremebikeday/" target="_blank">Extreme Bike Day</a> szervezőivel, és a <a href="https://www.facebook.com/ifjusagiegyesulet.feketesereg/" target="_blank">Fekete Sereg Ifjúsági Egyesület</a> csapatával vehettünk részt a IV. Kékedi tréningünkön mely ismét hasznosan telt. A találkozón újabb szakmai tapasztalatokat gyűjtöttünk, és sok-sok kapcsolattal lettünk gazdagabbak! #kéked</p>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedia%2Fset%2F%3Fvanity%3Difjusagiegyesulet.feketesereg%26set%3Da.2404219522973575&width=500&show_text=true&height=664&appId" width="500" height="664" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- Page navigator -->
+  <p align="center">Navigálj a hírek között!</p>
+  <p align="center"><a href="news.html">1.oldal</a> | 
+    <a href="news2.html">2.oldal</a> | 
+    <a href="news3.html">3.oldal</a> | 
+    <a href="news4.html">4.oldal</a> | 
+    <a href="news5.html">5.oldal</a> |
+    <a href="news6.html">6.oldal</a> |
+    <a href="news7.html">7.oldal</a> |
+    <a href="news8.html">8.oldal</a> |
+    <a href="news9.html">9.oldal</a>
+  </p>
+  <!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Gyermek-és Ifjúsági Önkormányzat</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

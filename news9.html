@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>GYIÖK Hajdúnánás</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:18px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Bezárás</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>GYIÖK<br>Hajdúnánás</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kezdőoldal</a> 
+    <a href="news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Híreink</a> 
+    <a href="members.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tagjaink</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kapcsolat</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>GYIÖK Hajdúnánás</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <!-- Iframe mobile compability: class="w3-mobile"  -->
+  <!-- Title -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Híreink.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>I. Hajdúnánási Ifjúsági Bál.</b></h1>
+    <p>2018.06.15-én megrendezésre került az I. Hajdúnánási Ifjúsági Bál. Ezúton is szeretnénk megköszönni Balogh-Tóth Zita tanárnőnek a sok segítséget, mind a szervezést, mind pedig a lebonyolítást illetően. Reméljük jól éreztétek magatokat! :) Jövőre folytatjuk!</p>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FHajdunanasarchivum%2Fphotos%2Fa.1303533179778255%2F1303533253111581&width=500&show_text=true&height=616&appId" width="500" height="616" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Rekontra projekt</b></h1>
+    <p>A Hajdúnánási Gyermek- és Ifjúsági Önkormányzat közreműködésének köszönhetően a Hajdúsági Görögkatolikus Gyermekvédelmi Központ 4 fiatal kerékpár szerelmese vehetett részt a Embassy of the Netherlands in Hungary és a Más-Mozaik Szociokulturális Egyesület közös "Rekontra" projektjében. Ennek keretében a fiatalok Hollandiából érkezett használt kerékpárokat újítottak fel a Kontra Közösségi Műhelyben profik felügyelete mellett saját igényeik szerint. A felújított bicikliket megtarthatják, valamint a projekt zárásaként nyáron részt vehettek egy kerékpáros nyári táborban Kékeden, ahol a GYIÖK tagjai önkéntes segítséget vállaltak.</p>
+    <div class="w3-row-padding">
+        <div class="w3-half">
+            <img src="assets/rekontra/rk1.jpg" onclick="onClick(this)" style="width:50%">
+            <img src="assets/rekontra/rk2.jpg" onclick="onClick(this)" style="width:50%">
+            <img src="assets/rekontra/rk3.jpg" onclick="onClick(this)" style="width:50%">
+        </div>
+    
+        <div class="w3-half">
+            <img src="assets/rekontra/rk4.jpg" onclick="onClick(this)" style="width:50%">
+            <img src="assets/rekontra/rk5.jpg" onclick="onClick(this)" style="width:50%">
+        </div>
+      </div>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Nemzetközi kapcsolatok a GYIÖK-el - Internatonal relations with GYIÖK</b></h1>
+    <p>2018.02.03-án A Fekete Sereg Egyesület programjának keretében városunkba látogatott külföldi fiatalokkal tölthettünk el egy kellemes délutánt.A találkozón olyan Olasz, Francia, Német,Román,Portugál,Uruguay-i fiatalok vettek részt akik szerettek volna betekintést nyerni a GYIÖK munkásságába, valamint ismertettek Ifjúsági Önkormányzatunkkal olyan nemzetközi önkéntes programokat melyekben többek között ők is részt vesznek.A találkozó célja volt még ezen kívül az ismerkedés , melynek köszönhetően lehetőségünk nyílt saját kultúránk bemutatására, angol tudásunk fejlesztésére.</p>
+    <p>Thanks for the program of Fekete Sereg Association foreigner youths meet our town on 2018 February 3rd and we could took a pleasant afternoon. In the appointment participated Italian, French, German, Romanian, Portuguese, Uruguayan youths who want to know the work of GYIÖK and informed our Youth Government about international volunteer programs wherein they took part too.</p>
+    <div class="w3-row-padding">
+        <div class="w3-half">
+            <img src="assets/international/ing1.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/international/ing2.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/international/ing3.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/international/ing4.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/international/ing5.jpg" onclick="onClick(this)" style="width:100%">
+        </div>
+    
+        <div class="w3-half">
+            <img src="assets/international/ing6.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/international/ing7.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/international/ing8.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/international/ing9.jpg" onclick="onClick(this)" style="width:100%">
+        </div>
+    </div>
+
+    <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Névjegyprogram</b></h1>
+    <p>Önkormányzatunk 2017.12.12-én rendezte meg bemutatkozó rendezvénysorozatát, mely nagy sikerrel zárult. Az elkövetkező képsorozattal betekintést nyerhettek a rendezvényünkbe.</p>
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <img src="assets/nevjegy/nj_1.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_4.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_7.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_15.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_8.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_11.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_18.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_22.jpg" onclick="onClick(this)" style="width:100%">
+        </div>
+    
+        <div class="w3-third">
+            <img src="assets/nevjegy/nj_2.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_5.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_13.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_16.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_9.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_12.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_19.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="" onclick="onClick(this)" style="width:50%">
+        </div>
+        <div class="w3-third">
+            <img src="assets/nevjegy/nj_3.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_6.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_14.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_21.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_10.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_17.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_20.jpg" onclick="onClick(this)" style="width:100%">
+            <img src="assets/nevjegy/nj_23.jpg" onclick="onClick(this)" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- Page navigator -->
+  <p align="center">Navigálj a hírek között!</p>
+  <p align="center"><a href="news.html">1.oldal</a> | 
+    <a href="news2.html">2.oldal</a> | 
+    <a href="news3.html">3.oldal</a> | 
+    <a href="news4.html">4.oldal</a> | 
+    <a href="news5.html">5.oldal</a> |
+    <a href="news6.html">6.oldal</a> |
+    <a href="news7.html">7.oldal</a> |
+    <a href="news8.html">8.oldal</a> |
+    <a href="news9.html">9.oldal</a>
+  </p>
+  <!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Gyermek-és Ifjúsági Önkormányzat</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

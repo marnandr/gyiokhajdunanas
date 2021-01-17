@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>GYIÖK Hajdúnánás</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:18px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Bezárás</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>GYIÖK<br>Hajdúnánás</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kezdőoldal</a> 
+    <a href="news.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Híreink</a> 
+    <a href="members.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tagjaink</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kapcsolat</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>GYIÖK Hajdúnánás</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Title -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Híreink.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- It will be page3 -->
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Zenetörténeti szakkör a Kéky Lajos Városi Művelődési Központban.</b></h1>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FKekyLajosVMKHajdunanas%2Fposts%2F3197830960262523&width=500&show_text=true&height=589&appId" width="500" height="589" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Adománygyűjtés a Dézsi családnak.</b></h1>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftunde.nagynedezsi.5%2Fposts%2F688193365361170&width=500&show_text=true&height=465&appId" width="500" height="465" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Dirt Pálya a városi Ligetben.</b></h1>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D640635799867133%26id%3D100017621561411&width=500&show_text=true&height=809&appId" width="500" height="809" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>MotoGP projekt a városunkban.</b></h1>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftibor.szollath.7%2Fposts%2F3151167464941878&width=500&show_text=true&height=752&appId" width="500" height="752" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Új kondipark a Városi Ligetben.</b></h1>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftibor.szollath.7%2Fposts%2F3091879354204023&width=500&show_text=true&height=841&appId" width="500" height="841" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- News -->
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-text-red"><b>Újra kinyit a Halido a városunkban.</b></h1>
+    <iframe class="w3-mobile" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fhalidodisco%2Fposts%2F115032553545639&width=500&show_text=true&height=497&appId" width="500" height="497" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+
+  <!-- Page navigator -->
+  <p align="center">Navigálj a hírek között!</p>
+  <p align="center"><a href="news.html">1.oldal</a> | 
+    <a href="news2.html">2.oldal</a> | 
+    <a href="news3.html">3.oldal</a> | 
+    <a href="news4.html">4.oldal</a> | 
+    <a href="news5.html">5.oldal</a> |
+    <a href="news6.html">6.oldal</a> |
+    <a href="news7.html">7.oldal</a> |
+    <a href="news8.html">8.oldal</a> |
+    <a href="news9.html">9.oldal</a>
+  </p>
+  <!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Gyermek-és Ifjúsági Önkormányzat</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
